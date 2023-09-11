@@ -13,7 +13,7 @@
     }
 
     .text {
-        @apply text-md font-medium;
+        @apply text-sm font-medium;
     }
 
 }

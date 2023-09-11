@@ -26,7 +26,19 @@ const Home = () => {
     return (
         <>
             <NavBar />
-            <div className="section">
+            <div className="section ">
+                <div className="grid grid-cols-4 rtl-grid px-14 gap-4">
+                    {cardData.map((card, index) => (
+                        <Card
+                            key={index}
+                            name={card.name}
+                            status={card.status}
+                            count={card.count}
+                            numberD={card.numberD}
+                            imageUrl={card.imageUrl}
+                        />
+                    ))}
+                </div>
             </div>
         </>
     )
