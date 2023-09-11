@@ -1,12 +1,14 @@
+import NavBar from '../components/NavBar'
 
 const Associations = () => {
 
     return (
-
-        <div className="section">
-            Associations
-        </div>
-
+        <>
+            <NavBar />
+            <div className="section">
+                Associations
+            </div>
+        </>
     )
 
 }

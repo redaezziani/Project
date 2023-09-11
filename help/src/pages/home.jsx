@@ -1,16 +1,16 @@
 import NavBar from '../components/NavBar'
 
-const Communication = () => {
+const Home = () => {
 
     return (
         <>
             <NavBar />
             <div className="section">
-                Communication
+                Default, landing page.
             </div>
         </>
     )
 
 }
 
-export default Communication
+export default Home

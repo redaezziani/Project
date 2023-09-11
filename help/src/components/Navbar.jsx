@@ -1,4 +1,3 @@
-import '../App.css';
 import { Link } from "react-router-dom";
 import React from "react";
 import {
@@ -8,7 +7,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 
-export function NavbarDefault() {
+function NavBar() {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
@@ -36,7 +35,7 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal rtl-nav"
       >
-        <Link to="/vile" className="flex items-center">
+        <Link to="/cities" className="flex items-center">
           صفحة القرى
         </Link>
       </Typography>
@@ -46,9 +45,9 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <Link to="/associations" className="flex items-center">
           صفحة الجمعيات
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -56,9 +55,9 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <Link to="/communication" className="flex items-center">
           تواصل
-        </a>
+        </Link>
       </Typography>
     </ul>
   );
@@ -120,3 +119,5 @@ export function NavbarDefault() {
     </Navbar>
   );
 }
+
+export default NavBar

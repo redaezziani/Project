@@ -1,12 +1,14 @@
+import NavBar from '../components/NavBar'
 
 const Cities = () => {
 
     return (
-
-        <div className="section">
-            Cities
-        </div>
-
+        <>
+            <NavBar />
+            <div className="section">
+                Cities
+            </div>
+        </>
     )
 
 }
