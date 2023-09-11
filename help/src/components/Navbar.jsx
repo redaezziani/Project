@@ -65,7 +65,7 @@ export function NavbarDefault() {
   );
 
   return (
-    <Navbar className="mx-auto font-Cairo fixed top-1 rtl-navbar max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4">
+    <Navbar className="mx-auto font-Cairo fixed z-50 top-0 rtl-navbar max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <div className="hidden lg:block">{navList}</div>
         <IconButton

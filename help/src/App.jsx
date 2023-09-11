@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="w-full flex-col relative justify-center items-center flex p-3 overflow-hidden">
       <NavbarDefault />
-      <div className="w-full mt-24 rtl-grid px-11 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 ">
+      <div className="w-full mt-24 rtl-grid z-10 px-11 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-4 ">
         {cardData.map((card, index) => (
             <Card key={index} {...card} />
         ))}
