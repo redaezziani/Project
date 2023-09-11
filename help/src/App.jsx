@@ -30,15 +30,12 @@ function App() {
         ))}
       </div>} />
       <Route path="/vile" element={<h1>Ville</h1>}/>
-
+      {/*
+        if the route not found show this element
+      */}
+      <Route path="*" element={<h1>Not Found</h1>}/>
       </Routes>
 
-      {
-        /*
-        if the route not found
-        */
-      }
-      <Route path="*" element={<h1>Not Found</h1>}/>
     </div>
   );
 }
