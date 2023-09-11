@@ -11,7 +11,7 @@ const notFound = () => {
           404 Page is not found!
         </div>
         
-        <Link className="text" to="/">
+        <Link className="btn-primary" to="/">
           Go back home
         </Link>
 

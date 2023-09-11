@@ -9,8 +9,8 @@ module.exports = withMT({
         'app--dark': 'theme(colors.gray.900)',
         'app-light': 'theme(colors.gray.100)',
         'app--light': 'theme(colors.gray.300)',
-        'app-primary': 'theme(colors.orange.600)',
-        'app--primary': 'theme(colors.orange.300)',
+        'app-primary': 'theme(colors.green.400)',
+        'app--primary': 'theme(colors.green.200)',
       },
 
       fontFamily: {
