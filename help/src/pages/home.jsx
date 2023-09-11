@@ -1,47 +1,6 @@
 // Home page //
 
 import NavBar from '../components/NavBar'
-import Card from '../components/Card';
-
-// Testing data //
-const cardData = [
-    {
-        name: "  الرياض",
-        status: "منكوبة",
-        count: 12,
-        numberD: 1000,
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/View_of_Aroumd.jpg/1024px-View_of_Aroumd.jpg",
-    },
-    {
-        name: "  الرياض",
-        status: "مساعدة",
-        count: 20,
-        numberD: 100,
-        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrmI2fj0E3rE7yZk-Z10j8sa3I03voi0wp5A&usqp=CAU",
-    },
-    {
-        name: "  الرياض",
-        status: "مساعدة",
-        count: 20,
-        numberD: 100,
-        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrmI2fj0E3rE7yZk-Z10j8sa3I03voi0wp5A&usqp=CAU",
-    },
-    {
-        name: "  الرياض",
-        status: "مساعدة",
-        count: 20,
-        numberD: 100,
-        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrmI2fj0E3rE7yZk-Z10j8sa3I03voi0wp5A&usqp=CAU",
-    },
-    {
-        name: "  الرياض",
-        status: "مساعدة",
-        count: 20,
-        numberD: 100,
-        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrmI2fj0E3rE7yZk-Z10j8sa3I03voi0wp5A&usqp=CAU",
-    },
-
-]
 
 const Home = () => {
 
@@ -49,18 +8,31 @@ const Home = () => {
         <>
             <NavBar />
             <div className="section">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 rtl-grid px-14 gap-4">
-                    {cardData.map((card, index) => (
-                        <Card
-                            key={index}
-                            name={card.name}
-                            status={card.status}
-                            count={card.count}
-                            numberD={card.numberD}
-                            imageUrl={card.imageUrl}
-                        />
-                    ))}
+
+                <div className="grid grid-cols-6 md:grid-cols-12 gap-y-4 md:gap-4 justify-center items-center">
+
+                    {/* Image */}
+                    <div className="col-span-6 w-full h-full flex justify-center items-center">
+                        <img className='w-full h-full rounded-lg' src='hero.jpg' />
+                    </div>
+
+                    {/* Text */}
+                    <div className="col-span-6 w-full h-full flex flex-col justify-center rtl-grid">
+                        <div className="title">
+                            #زلزال الحوز.
+                        </div>
+                        <div className="text">
+                            وقع الزلزال في جبال الأطلس، وكانت قوته 7.2 درجة على مقياس ريختر . وفقًا لتقارير علمية، تقع جبال الأطلس بين صفيحتين تكتونيتين، وهذا يؤدي إلى حدوث هزات أرضية . وفي آخر حصيلة للضحايا، قتل أكثر من ألفي شخص وأصيب مثلهم تقريبًا .  ومباشرة بعد الزلزال، عرفت المناطق المجاورة دفعات كبيرة من المساعدات من مختلف المؤسسات والجمعيات والأفراد. ولأجل تنضيم هذه العملية وضمان وصول المساعدات لطافة المناطق المتضررة. قررنا نحن فريق المطورين إنشاء هذه المنصة الغير ربحية التي تهذف إلى جمع البياات حول القرى المتضررة من الزلزال وفرز المناطق المنكوبة من المناطق التي وصلتها المساعدات لضمان توزيع عادل للمساعدات.
+                        </div>
+                    </div>
+
+                    {/* Button */}
+                    <div className="col-span-6 btn-dark text-center">
+                        تعرف على القرى
+                    </div>
+
                 </div>
+
             </div>
         </>
     )

@@ -7,7 +7,8 @@
     .section {
         @apply bg-app-light text-app-dark font-Cairo
         font-medium w-full min-h-screen flex flex-col gap-2
-        justify-center items-center mt-20 md:m-0 max-w-[1200px];
+        p-4 py-20
+        justify-center items-center md:m-0 max-w-[1200px];
     }
 
     .title {
@@ -20,17 +21,17 @@
     
     .btn-primary {
         @apply bg-app--primary text-app-dark text px-3 py-2 rounded-full
-        hover:bg-app-primary active:scale-110 duration-200;
+        hover:bg-app-primary active:scale-110 duration-200 cursor-pointer;
     }
 
     .btn-dark {
         @apply bg-app--dark text-app-light text px-2 py-1 rounded-full
-        hover:bg-app-dark active:scale-110 duration-200;
+        hover:bg-app-dark active:scale-110 duration-200 cursor-pointer;
     }
 
     .btn-light {
         @apply bg-app--light text-app-dark text px-2 py-1 rounded-full
-        active:scale-110 duration-200;
+        active:scale-110 duration-200 cursor-pointer;
     }
 
 }
