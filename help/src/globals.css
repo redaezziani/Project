@@ -5,7 +5,7 @@
 @layer components {
 
     .section {
-        @apply bg-app-light font-Cairo font-medium w-full h-screen flex flex-col gap-2 justify-center items-center;
+        @apply bg-app-light text-app-dark font-Cairo font-medium w-full h-screen flex flex-col gap-2 justify-center items-center;
     }
 
     .title {
@@ -13,7 +13,22 @@
     }
 
     .text {
-        @apply text-md font-medium;
+        @apply text-base font-semibold;
+    }
+    
+    .btn-primary {
+        @apply bg-app--primary text-app-dark text px-2 py-1 rounded-full
+        hover:bg-app-primary active:scale-110 duration-200;
+    }
+
+    .btn-dark {
+        @apply bg-app--dark text-app-light text px-2 py-1 rounded-full
+        hover:bg-app-dark active:scale-110 duration-200;
+    }
+
+    .btn-light {
+        @apply bg-app--light text-app-dark text px-2 py-1 rounded-full
+        active:scale-110 duration-200;
     }
 
 }

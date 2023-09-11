@@ -26,8 +26,7 @@ const Home = () => {
     return (
         <>
             <NavBar />
-            <div className="section">
-            </div>
+            <div className="section"></div>
         </>
     )
 

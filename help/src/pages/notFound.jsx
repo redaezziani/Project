@@ -1,14 +1,17 @@
+// Not Found Page
+
 import { Link } from "react-router-dom";
 
 const notFound = () => {
 
   return (
-    <div className='section'>
+    <div className="section">
 
-        <h1 className="text-2xl font-black font-Cairo">
-          404 Page is not found
-        </h1>
-        <Link className="text-sm font-bold font-Cairo" to="/">
+        <div className="title">
+          404 Page is not found!
+        </div>
+        
+        <Link className="text" to="/">
           Go back home
         </Link>
 

@@ -23,7 +23,7 @@ function NavBar() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1"
       >
         <Link to="/" className="flex items-center">
           الرئيسية
