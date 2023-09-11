@@ -7,8 +7,8 @@ module.exports = withMT({
       colors: {
         'app-dark': 'theme(colors.gray.800)',
         'app--dark': 'theme(colors.gray.900)',
-        'app-light': 'theme(colors.gray.100)',
-        'app--light': 'theme(colors.gray.300)',
+        'app-light': 'theme(colors.gray.50)',
+        'app--light': 'theme(colors.gray.200)',
         'app-primary': 'theme(colors.green.400)',
         'app--primary': 'theme(colors.green.200)',
       },

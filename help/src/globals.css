@@ -5,7 +5,9 @@
 @layer components {
 
     .section {
-        @apply bg-app-light text-app-dark font-Cairo font-medium w-full h-screen flex flex-col gap-2 justify-center items-center;
+        @apply bg-app-light text-app-dark font-Cairo
+        font-medium w-full min-h-screen flex flex-col gap-2
+        justify-center items-center mt-20 md:m-0 max-w-[1200px];
     }
 
     .title {
@@ -17,7 +19,7 @@
     }
     
     .btn-primary {
-        @apply bg-app--primary text-app-dark text px-2 py-1 rounded-full
+        @apply bg-app--primary text-app-dark text px-3 py-2 rounded-full
         hover:bg-app-primary active:scale-110 duration-200;
     }
 

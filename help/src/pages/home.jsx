@@ -19,16 +19,37 @@ const cardData = [
         numberD: 100,
         imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrmI2fj0E3rE7yZk-Z10j8sa3I03voi0wp5A&usqp=CAU",
     },
-];
+    {
+        name: "  الرياض",
+        status: "مساعدة",
+        count: 20,
+        numberD: 100,
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrmI2fj0E3rE7yZk-Z10j8sa3I03voi0wp5A&usqp=CAU",
+    },
+    {
+        name: "  الرياض",
+        status: "مساعدة",
+        count: 20,
+        numberD: 100,
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrmI2fj0E3rE7yZk-Z10j8sa3I03voi0wp5A&usqp=CAU",
+    },
+    {
+        name: "  الرياض",
+        status: "مساعدة",
+        count: 20,
+        numberD: 100,
+        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrmI2fj0E3rE7yZk-Z10j8sa3I03voi0wp5A&usqp=CAU",
+    },
+
+]
 
 const Home = () => {
 
     return (
         <>
             <NavBar />
-            <div className="section"></div>
-            <div className="section ">
-                <div className="grid grid-cols-4 rtl-grid px-14 gap-4">
+            <div className="section">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 rtl-grid px-14 gap-4">
                     {cardData.map((card, index) => (
                         <Card
                             key={index}
