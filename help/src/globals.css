@@ -8,6 +8,14 @@
         @apply bg-app-light font-Cairo font-medium w-full h-screen flex flex-col gap-2 justify-center items-center;
     }
 
+    .title {
+        @apply text-2xl font-black;
+    }
+
+    .text {
+        @apply text-md font-medium;
+    }
+
 }
 
 @layer utilities {
