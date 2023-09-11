@@ -1,6 +1,6 @@
 import './App.css';
 import { NavbarDefault } from './components/Navbar';
-import Card from './components/Card'; // Import the Card component without curly braces
+import Card from './components/Card'; 
 import { Route , Routes  } from 'react-router-dom';
 function App() {
   const cardData = [
