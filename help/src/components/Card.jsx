@@ -1,4 +1,8 @@
 import { Link } from 'react-router-dom';
+//lets get curent params
+ 
+
+
 
 function Card({ name, count, imageUrl, numberD , status}) {
   return (
