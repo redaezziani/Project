@@ -6,7 +6,7 @@ function Card({ name, count, imageUrl, numberD , status}) {
       <div className="img-container w-full h-40 rounded-md overflow-hidden">
         <img src={imageUrl} alt="card" className="w-full h-full object-cover object-center" />
       </div>
-      <div className={`chip flex justify-center rounded-md absolute left-1 top-1 bg-opacity-80 items-center px-4 py-1 ${status=='منكوبة'?'bg-red-600':'bg-blue-600'} text-white`}>
+      <div className={`chip flex justify-center rounded-md absolute left-1 top-1 bg-opacity-80 items-center px-4 py-1 ${status=='منكوبة'?'bg-red-600':' bg-green-500'} text-white`}>
         <p className="text-xs font-semibold">
           {status}
         </p>
