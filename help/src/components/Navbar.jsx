@@ -113,14 +113,6 @@ export function NavbarDefault() {
           MD
         </Typography>
       </div>
-      <MobileNav open={openNav}>
-        <div className="container mx-auto">
-          {navList}
-          <Button variant="gradient" size="sm" fullWidth className="mb-2">
-            <span>شراء الآن</span>
-          </Button>
-        </div>
-      </MobileNav>
     </Navbar>
   );
 }
