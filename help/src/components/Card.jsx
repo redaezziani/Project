@@ -1,39 +1,32 @@
-import '../App.css';
-import {
-    Card,
-    CardHeader,
-    CardBody,
-    CardFooter,
-    Typography,
-    Button,
-} from "@material-tailwind/react";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-
-
-export function CardDefault({...card}) {
-  const {imageUrl, title, text} = card
-    return (
-        <div>
-          <Card  className="mt-6 w-96 rtl-card relative p-1">
-                    <CardHeader color="blue-gray" className="relative ">
-                        <img
-                            src={imageUrl}
-                            alt="صورة البطاقة"
-                            className='w-full h-full object-cover'
-                        />
-                    </CardHeader>
-                    <CardBody>
-                        <Typography variant="h5" color="blue-gray" className="mb-2 font-Cairo">
-                            {title}
-                        </Typography>
-                        <Typography className='font-Cairo'>
-                            {text}
-                        </Typography>
-                    </CardBody>
-                    <CardFooter className="pt-0">
-                        <Button className='font-Cairo'>اقرأ المزيد</Button>
-                    </CardFooter>
-                </Card>
+function Card({ name, count, imageUrl, numberD }) {
+  return (
+    <div className="w-full font-Cairo rtl-card flex-col relative rounded-md justify-center items-center flex p-3 overflow-hidden col-span-1">
+      <div className="img-container w-full rounded-md overflow-hidden">
+        <img src={imageUrl} alt="card" className="w-full h-full object-cover object-center" />
+      </div>
+      <div className="card-info">
+        <div className="name">
+          <h3 className=" font-semibold ">
+            {name}
+          </h3>
         </div>
-    );
+        <div className="card-info flex justify-start items-start gap-1 flex-col">
+          <p>
+            {count}
+          </p>
+          <p>
+            {numberD}
+          </p>
+        </div>
+        <Link to="/vile" className="flex text-slat items-center">
+            اقرأ المزيد
+        </Link>
+      </div>
+    </div>
+  );
 }
+
+export default Card;

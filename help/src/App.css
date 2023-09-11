@@ -12,5 +12,9 @@
     direction: rtl;
     text-align: right;
   }
+.rtl-grid {
+    direction: rtl;
+    text-align: right;
+}
   
   
