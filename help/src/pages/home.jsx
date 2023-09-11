@@ -26,9 +26,7 @@ const Home = () => {
     return (
         <>
             <NavBar />
-<<<<<<< HEAD
             <div className="section"></div>
-=======
             <div className="section ">
                 <div className="grid grid-cols-4 rtl-grid px-14 gap-4">
                     {cardData.map((card, index) => (
@@ -43,7 +41,6 @@ const Home = () => {
                     ))}
                 </div>
             </div>
->>>>>>> 66df2d644b4a75a64d101541a28a3237aff00cc0
         </>
     )
 

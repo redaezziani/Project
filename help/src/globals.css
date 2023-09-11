@@ -13,7 +13,6 @@
     }
 
     .text {
-<<<<<<< HEAD
         @apply text-base font-semibold;
     }
     
@@ -30,9 +29,6 @@
     .btn-light {
         @apply bg-app--light text-app-dark text px-2 py-1 rounded-full
         active:scale-110 duration-200;
-=======
-        @apply text-sm font-medium;
->>>>>>> 66df2d644b4a75a64d101541a28a3237aff00cc0
     }
 
 }
