@@ -33,11 +33,7 @@ function App() {
         ))}
       </div>} />
       <Route path="/vile" element={<h1>Ville</h1>}/>
-      {/*
-        if the route not found show this element
-      */}
-      <Route path="*" element={<h1>Not Found</h1>}/>
-      </Routes>
+      <Route path="*" element={<h1>Not Found</h1>}/></Routes>
 
     </div>
   );
