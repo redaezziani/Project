@@ -1,55 +1,66 @@
+/* App styling */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+@layer base {
 
-    .section {
-        @apply bg-app-light text-app-dark font-Cairo
-        font-medium w-full min-h-screen flex flex-col gap-2
-        p-4 py-20
-        justify-center items-center md:m-0 max-w-[1200px];
+    * {
+        font-family: "Cairo", "sans-serif";
     }
 
-    .title {
-        @apply text-2xl font-black;
-    }
-
-    .text {
-        @apply text-base font-semibold;
-    }
-    
-    .btn-primary {
-        @apply bg-app--primary text-app-dark text px-3 py-2 rounded-full
-        hover:bg-app-primary active:scale-110 duration-200 cursor-pointer;
-    }
-
-    .btn-dark {
-        @apply bg-app--dark text-app-light text px-2 py-1 rounded-full
-        hover:bg-app-dark active:scale-110 duration-200 cursor-pointer;
-    }
-
-    .btn-light {
-        @apply bg-app--light text-app-dark text px-2 py-1 rounded-full
-        active:scale-110 duration-200 cursor-pointer;
+    body {
+        @apply flex justify-center items-center bg-app-light;
     }
 
 }
 
-@layer utilities {
+@layer components {
 
-    .rtl-card {
-        direction: rtl; /* Set text direction to right-to-left */
-        text-align: right; /* Align text to the right */
+    .app {
+        @apply max-w-[1200px] w-full min-h-screen flex flex-col gap-y-6
+        justify-start items-center overflow-hidden;
     }
-    
-    .rtl-navbar {
+
+    .navbar {
+        @apply w-full grid grid-cols-6 md:grid-cols-12 items-center gap-2
+        bg-app--light p-2 md:p-4 border-b border-app--primary;
+    }
+
+    .page {
+        @apply w-full flex flex-col gap-4 p-4 md:py-20 justify-center items-center;
+    }
+
+    .title {
+        @apply text-xl font-black;
+    }
+
+    .text {
+        @apply text-sm font-semibold;
+    }
+
+    .text-rtl {
         direction: rtl;
         text-align: right;
-      }
-    .rtl-grid {
-        direction: rtl;
-        text-align: right;
+    }
+
+    .btn-primary {
+        @apply bg-app-primary text-app-light text px-3 py-2 w-fit
+        rounded-full hover:bg-app--primary active:scale-110
+        duration-200 cursor-pointer;
+    }
+
+    .btn-dark {
+        @apply bg-app-dark text-app-light text px-3 py-2 w-fit
+        rounded-full hover:bg-app--dark active:scale-110
+        duration-200 cursor-pointer;
+    }
+
+    .btn-light {
+        @apply bg-app-light text-app-dark text px-3 py-2 w-fit
+        rounded-full hover:bg-app--light active:scale-110
+        duration-200 cursor-pointer;
     }
 
 }

@@ -1,4 +1,9 @@
-import NavBar from '../components/NavBar'
+// Associations Page //
+
+import {
+    Footer,
+    NavBar
+} from '../components/modules'
 
 const Associations = () => {
 
@@ -8,9 +13,10 @@ const Associations = () => {
             <div className="section">
                 Associations
             </div>
+            <Footer/>
         </>
     )
 
 }
 
-export default Associations
+export { Associations }

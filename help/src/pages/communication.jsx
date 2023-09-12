@@ -1,4 +1,9 @@
-import NavBar from '../components/NavBar'
+// Associations - page //
+
+import {
+    Footer,
+    NavBar
+} from '../components/modules'
 
 const Communication = () => {
 
@@ -8,9 +13,10 @@ const Communication = () => {
             <div className="section">
                 Communication
             </div>
+            <Footer/>
         </>
     )
 
 }
 
-export default Communication
+export { Communication }

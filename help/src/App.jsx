@@ -1,16 +1,22 @@
-// Main page //
+// App page //
 
-import { Route , Routes  } from 'react-router-dom'
-import Home from './pages/home'
-import NotFound from './pages/notFound'
-import Cities from './sections/cities'
-import Associations from './sections/associations'
-import Communication from './sections/communication'
+import {
+  Route,
+  Routes
+} from 'react-router-dom'
+
+import {
+  Home,
+  NotFound,
+  Cities,
+  Associations,
+  Communication
+} from './pages/modules'
 
 function App() {
 
   return (
-    <div className="w-full relative flex flex-col justify-center items-center overflow-hidden">
+    <div className="app">
       
       <Routes>
       <Route path="/" element={<Home/>}/>
