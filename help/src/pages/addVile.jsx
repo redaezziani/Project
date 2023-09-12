@@ -70,16 +70,16 @@ const Form = () => {
               <p className="text-slate text-xl font-semibold">وصول الإغاثة:</p>
             </div>
             <div className="w-full justify-center flex-col items-center gap-2">
-              <div className="group  flex justify-center items-center">
+              <div className="group  flex justify-start items-center ">
                 <p>الدرك الملكي :</p>
-                <div className="radio-group  flex justify-center items-center gap-2">
+                <div className="radio-group  flex justify-start items-center  gap-2">
                   <div className="flex md:gap-10 ">
                     <Radio name="type1" label="نعم " />
                     <Radio name="type1" label="لا" defaultChecked />
                   </div>
                 </div>
               </div>
-              <div className="group  flex justify-center items-center">
+              <div className="group  flex justify-start items-center ">
                 <p> القوات لمساعدة  : </p>
                 <div className="radio-group ml-20 flex justify-center items-center gap-2">
                   <div className="flex md:gap-10 ">
@@ -88,7 +88,7 @@ const Form = () => {
                   </div>
                 </div>
               </div>
-              <div className="group  flex justify-center items-center">
+              <div className="group  flex justify-start items-center ">
                 <p>الوقاية المدنية : </p>
                 <div className="radio-group ml-20 flex justify-center items-center gap-2">
                   <div className="flex md:gap-10 ">
@@ -105,7 +105,7 @@ const Form = () => {
               <p className="text-slate text-xl font-semibold"> البنية التحتية : </p>
             </div>
             <div className="w-full justify-center flex-col items-center gap-2">
-              <div className="group  flex justify-center items-center">
+              <div className="group  flex justify-start items-center ">
                 <p>حالية الطرق : </p>
                 <div className="radio-group flex justify-center items-center gap-2">
                   <div className="flex md:gap-10 ">
@@ -115,7 +115,7 @@ const Form = () => {
                   </div>
                 </div>
               </div>
-              <div className="group  flex justify-center items-center">
+              <div className="group  flex justify-start items-center ">
                 <p>شبكة الأترنيت : </p>
                 <div className="radio-group ml-20 flex felx-col md:flex-row justify-center items-center gap-2">
                   <div className="flex md:gap-10 ">
@@ -125,7 +125,7 @@ const Form = () => {
                   </div>
                 </div>
               </div>
-              <div className="group  flex justify-center items-center">
+              <div className="group  flex justify-start items-center ">
                 <p>شبكة الماء : </p>
                 <div className="radio-group ml-20 flex justify-center items-center gap-2">
                   <div className="flex md:gap-10 ">
