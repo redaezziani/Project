@@ -1,4 +1,4 @@
-import { Input, Button } from "@material-tailwind/react";
+import { Input, Radio } from "@material-tailwind/react";
 import { RiImageAddFill } from "react-icons/ri";
 import { MdNavigateBefore } from "react-icons/md";
 
@@ -57,26 +57,85 @@ const Form = () => {
                 </div>
               </div>
               <div className="w-full grid md:grid-cols-4 grid-cols-2 lg:grid-cols-5 gap-2">
-                <div className="w-20 md:w-[80%] col-span-1 h-20 rounded-sm aspect-square bg-muted">
+                <div className="w-20 md:w-[80%] col-span-1 h-20 rounded-sm aspect-square bg-muted"></div>
+                <div className="w-20 md:w-[80%] col-span-1 h-20 rounded-sm aspect-square bg-muted"></div>
+                <div className="w-20 md:w-[80%] col-span-1 h-20 rounded-sm aspect-square bg-muted"></div>
+                <div className="w-20 md:w-[80%] col-span-1 h-20 rounded-sm aspect-square bg-muted"></div>
+                <div className="w-20 md:w-[80%] col-span-1 h-20 rounded-sm aspect-square bg-muted"></div>
+              </div>
+            </div>
+          </div>
+          <div className="w-full flex flex-col gap-4 mt-10 ">
+            <div className="w-full text-start">
+              <p className="text-slate text-xl font-semibold">وصول الإغاثة:</p>
+            </div>
+            <div className="w-full justify-center flex-col items-center gap-2">
+              <div className="group  flex justify-center items-center">
+                <p>الدرك الملكي :</p>
+                <div className="radio-group  flex justify-center items-center gap-2">
+                  <div className="flex md:gap-10 ">
+                    <Radio name="type1" label="نعم " />
+                    <Radio name="type1" label="لا" defaultChecked />
+                  </div>
                 </div>
-                <div className="w-20 md:w-[80%] col-span-1 h-20 rounded-sm aspect-square bg-muted">
+              </div>
+              <div className="group  flex justify-center items-center">
+                <p> القوات لمساعدة  : </p>
+                <div className="radio-group ml-20 flex justify-center items-center gap-2">
+                  <div className="flex md:gap-10 ">
+                    <Radio name="type2" label="نعم " />
+                    <Radio name="type2" label="لا" defaultChecked />
+                  </div>
                 </div>
-                <div className="w-20 md:w-[80%] col-span-1 h-20 rounded-sm aspect-square bg-muted">
-                </div>
-                <div className="w-20 md:w-[80%] col-span-1 h-20 rounded-sm aspect-square bg-muted">
-                </div>
-                <div className="w-20 md:w-[80%] col-span-1 h-20 rounded-sm aspect-square bg-muted">
+              </div>
+              <div className="group  flex justify-center items-center">
+                <p>الوقاية المدنية : </p>
+                <div className="radio-group ml-20 flex justify-center items-center gap-2">
+                  <div className="flex md:gap-10 ">
+                    <Radio name="type3" label="نعم " />
+                    <Radio name="type3" label="لا" defaultChecked />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="w-full">
-          <Button className="rtl-container flex items-center justify-center gap-2 font-Cairo">التالي
-          <MdNavigateBefore
-          className="text-xl "
-          />
-          </Button>
-          
+
+          <div className=" w-full flex flex-col gap-4 mt-10 ">
+            <div className="w-full text-start">
+              <p className="text-slate text-xl font-semibold"> البنية التحتية : </p>
+            </div>
+            <div className="w-full justify-center flex-col items-center gap-2">
+              <div className="group  flex justify-center items-center">
+                <p>حالية الطرق : </p>
+                <div className="radio-group flex justify-center items-center gap-2">
+                  <div className="flex md:gap-10 ">
+                    <Radio name="type4"defaultChecked label="جيدة " />
+                    <Radio name="type4"  label="رديئة " />
+                    <Radio name="type4" label="منعدمة"  />
+                  </div>
+                </div>
+              </div>
+              <div className="group  flex justify-center items-center">
+                <p>شبكة الأترنيت : </p>
+                <div className="radio-group ml-20 flex felx-col md:flex-row justify-center items-center gap-2">
+                  <div className="flex md:gap-10 ">
+                    <Radio name="type5"defaultChecked label="جيدة " />
+                    <Radio name="type5"  label="رديئة " />
+                    <Radio name="type5" label="منعدمة"  />
+                  </div>
+                </div>
+              </div>
+              <div className="group  flex justify-center items-center">
+                <p>شبكة الماء : </p>
+                <div className="radio-group ml-20 flex justify-center items-center gap-2">
+                  <div className="flex md:gap-10 ">
+                    <Radio name="type6"defaultChecked label="جيدة " />
+                    <Radio name="type6"  label="رديئة " />
+                    <Radio name="type6" label="منعدمة"  />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
