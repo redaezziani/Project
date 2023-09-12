@@ -33,7 +33,7 @@ const Home = () => {
 
                     {/* Image */}
                     <div className="col-span-6">
-                        <img className='rounded-lg w-full h-full' src='hero.jpg' />
+                        <img className='rounded-lg w-full h-full' src='https://idsb.tmgrup.com.tr/ly/uploads/images/2023/09/12/291752.jpg' />
                     </div>
 
                     {/* Text */}
