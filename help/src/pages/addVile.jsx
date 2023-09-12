@@ -1,6 +1,6 @@
-import { Input } from "@material-tailwind/react";
+import { Input, Button } from "@material-tailwind/react";
 import { RiImageAddFill } from "react-icons/ri";
-import StepperWithIcon from "../components/Setps";
+import { MdNavigateBefore } from "react-icons/md";
 
 const Form = () => {
   return (
@@ -56,22 +56,27 @@ const Form = () => {
                   </label>
                 </div>
               </div>
-              <div className="w-full grid grid-cols-5 gap-2">
-                <div className="w-[80%] col-span-1 h-20 rounded-sm aspect-square bg-muted">
+              <div className="w-full grid md:grid-cols-4 grid-cols-2 lg:grid-cols-5 gap-2">
+                <div className="w-20 md:w-[80%] col-span-1 h-20 rounded-sm aspect-square bg-muted">
                 </div>
-                <div className="w-[80%] col-span-1 h-20 rounded-sm aspect-square bg-muted">
+                <div className="w-20 md:w-[80%] col-span-1 h-20 rounded-sm aspect-square bg-muted">
                 </div>
-                <div className="w-[80%] col-span-1 h-20 rounded-sm aspect-square bg-muted">
+                <div className="w-20 md:w-[80%] col-span-1 h-20 rounded-sm aspect-square bg-muted">
                 </div>
-                <div className="w-[80%] col-span-1 h-20 rounded-sm aspect-square bg-muted">
+                <div className="w-20 md:w-[80%] col-span-1 h-20 rounded-sm aspect-square bg-muted">
                 </div>
-                <div className="w-[80%] col-span-1 h-20 rounded-sm aspect-square bg-muted">
+                <div className="w-20 md:w-[80%] col-span-1 h-20 rounded-sm aspect-square bg-muted">
                 </div>
               </div>
             </div>
           </div>
-          <div className="w-full rtl-container">
-          <StepperWithIcon/>
+          <div className="w-full">
+          <Button className="rtl-container flex items-center justify-center gap-2 font-Cairo">التالي
+          <MdNavigateBefore
+          className="text-xl "
+          />
+          </Button>
+          
           </div>
         </div>
       </div>
