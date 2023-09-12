@@ -11,7 +11,7 @@
     }
 
     body {
-        @apply flex justify-center items-center bg-app-light;
+        @apply flex justify-center items-center ;
     }
 
 }
@@ -25,7 +25,7 @@
 
     .navbar {
         @apply w-full grid grid-cols-6 md:grid-cols-12 items-center gap-2
-        bg-app--light p-2 md:p-4 border-b border-app--primary;
+         p-2 md:p-4 border-b border-app--primary;
     }
 
     .page {
