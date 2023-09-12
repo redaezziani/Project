@@ -3,7 +3,7 @@
 const Footer = () => {
 
     return (
-        <div className="w-full rtl-container bg-mutedLight flex flex-col justify-center items-start border-t border-emerald p-20">
+        <div className="w-full rtl-container h-fit bg-mutedLight flex flex-col justify-center items-start border-t border-emerald p-10">
             <div className="w-full text-center">
                 <p className=" font-semibold">
                 Maroc Solidarité
