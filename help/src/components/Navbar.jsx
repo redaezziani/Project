@@ -62,7 +62,7 @@ export function NavBar() {
   }, []);
 
   return (
-    <Navbar className="mx-auto fixed top-0 text-rtl max-w-screen-xl px-6 py-3">
+    <Navbar className="mx-auto fixed top-0 text-rtl w-full rounded-none px-6 py-3">
       <motion.div className="flex items-center justify-betwe900">
         <Typography
           as="a"

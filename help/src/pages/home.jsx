@@ -23,7 +23,9 @@ const Supporters = [
 ]
 
 const Home = () => {
-
+    //lets make a skelton pluse a for the image and text
+    const skelton = () => {
+    }
     return (
         <>
             <NavBar />
@@ -37,12 +39,12 @@ const Home = () => {
                     </div>
 
                     {/* Text */}
-                    <div className="col-span-6 flex flex-col justify-center gap-4 text-rtl">
+                    <div className="md:col-span-5 col-span-6 flex flex-col justify-center items-start w-full gap-4 text-rtl">
                         <div className="title">#زلزال الحوز.</div>
                         <div className="text">
                             وقع الزلزال في جبال الأطلس، وكانت قوته 7.2 درجة على مقياس ريختر . وفقًا لتقارير علمية، تقع جبال الأطلس بين صفيحتين تكتونيتين، وهذا يؤدي إلى حدوث هزات أرضية . وفي آخر حصيلة للضحايا، قتل أكثر من ألفي شخص وأصيب مثلهم تقريبًا .  ومباشرة بعد الزلزال، عرفت المناطق المجاورة دفعات كبيرة من المساعدات من مختلف المؤسسات والجمعيات والأفراد. ولأجل تنضيم هذه العملية وضمان وصول المساعدات لطافة المناطق المتضررة. قررنا نحن فريق المطورين إنشاء هذه المنصة الغير ربحية التي تهذف إلى جمع البياات حول القرى المتضررة من الزلزال وفرز المناطق المنكوبة من المناطق التي وصلتها المساعدات لضمان توزيع عادل للمساعدات.
                         </div>
-                        <div className="btn-dark">
+                        <div className=" bg-emerald text-white rounded-sm px-3  w-40 text-center py-2">
                             <Link to="/cities">تعرف على القرى</Link>
                         </div>
                     </div>
@@ -54,18 +56,16 @@ const Home = () => {
 
                     {
                         Supporters.map((supporter, index) => {
-
                             return (
                                 <div
-                                    className="col-span-6 lg:col-span-4 flex flex-col gap-2
-                                    bg-app--light border border-app--dark shadow-md rounded-lg p-2"
-                                    key={index}
-                                >
-                                    <img className="object-cover rounded-lg" src={supporter.imgSrc} />
-                                    <div className="title text-center">{supporter.name}</div>
+                                key={index}
+                                className="col-span-6 md:col-span-4 flex flex-col justify-center items-center gap-4 text-rtl">
+                                    <img className='rounded-lg w-[88%] h-[80%]' src={supporter.imgSrc} />
+                                    <div className="text">
+                                        {supporter.name}
+                                    </div>
                                 </div>
                             )
-
                         })
                     }
 

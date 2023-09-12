@@ -14,6 +14,7 @@ module.exports = withMT({
         'app-primary': 'theme(colors.teal.400)',
         'app--primary': 'theme(colors.teal.200)',
         muted:'#D3D7E7',
+        mutedLight:'#F3F4F6',
         slate : '#4A5568',
         emerald: '#10B981',
       },
