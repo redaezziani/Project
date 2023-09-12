@@ -43,6 +43,15 @@ function NavList() {
           شروط الخصوصية
         </Link>
       </Typography>
+
+      <Typography as="li" variant="small" className="p-1 font-medium">
+        <Link
+          to="/addVile"
+          className="flex items-center hover:text-emerald transition-colors"
+        >
+           إضافة دوار
+        </Link>
+      </Typography>
     </ul>
   );
 }
