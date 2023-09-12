@@ -23,6 +23,7 @@
         justify-start items-center overflow-hidden;
     }
 
+
     .navbar {
         @apply w-full grid grid-cols-6 md:grid-cols-12 items-center gap-2
          p-2 md:p-4 border-b border-app--primary;
@@ -61,6 +62,10 @@
         @apply bg-app-light text-app-dark text px-3 py-2 w-fit
         rounded-full hover:bg-app--light active:scale-110
         duration-200 cursor-pointer;
+    }
+    .text-rtl{
+        direction: rtl;
+        text-align: right;
     }
 
 }
