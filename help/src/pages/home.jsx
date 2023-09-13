@@ -32,8 +32,11 @@ const Home = () => {
   }, [loading]);
   return (
     <>
+
       <NavBar />
+
       <div className="page">
+        <br /><br />
         <div className="grid grid-cols-6 md:grid-cols-12 justify-center items-center gap-4">
           {/* Image */}
           <div className="col-span-6">
@@ -63,9 +66,9 @@ const Home = () => {
               المناطق المنكوبة من المناطق التي وصلتها المساعدات لضمان توزيع عادل
               للمساعدات.
             </div>
-            <div className=" bg-emerald text-white rounded-sm px-3  w-40 text-center py-2">
+            <button class="cursor-pointer uppercase rounded-sm bg-emerald text-white px-4 py-2 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#00000020,-0.5rem_-0.5rem_#00000020] transition">
               <Link to="/cities">تعرف على القرى</Link>
-            </div>
+            </button>
           </div>
 
           {/* Title */}
@@ -88,8 +91,11 @@ const Home = () => {
             );
           })}
         </div>
+        <br /><br />
       </div>
+
       <Footer />
+
     </>
   );
 };

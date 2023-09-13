@@ -6,10 +6,10 @@ const CityCard = ({ name, imageUrl, status, populationCount, numberOfContributio
 
   return (
 
-    <div className="w-full bg-app--light border border-app--dark shadow-md flex-col gap-4 rounded-lg justify-center items-center flex p-4">
-
-      <div className="relative w-full h-60 rounded-lg overflow-hidden">
-        <div className={`chip flex justify-center rounded-full absolute left-1 top-1 items-center px-4 py-1 ${status ? 'bg-green-400' : ' bg-red-400'} text-white`}>
+    <div className="w-full bg-app-light border border-app--light shadow-md flex-col gap-4 rounded-md justify-center items-center flex p-4">
+      
+      <div className="relative w-full h-60 rounded-md overflow-hidden">
+        <div className={`chip flex justify-center rounded-md absolute left-1 top-1 items-center px-2 py-1 m-1 ${status ? 'bg-green-400' : ' bg-red-400'} text-white`}>
           <p className="text-xs font-semibold">
             {status ? 'مساعدة' : 'منكوبة'}
           </p>

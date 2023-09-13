@@ -10,7 +10,7 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 function NavList() {
   return (
-    <ul className="my-2  flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography as="li" variant="small" className="p-1 font-medium">
         <Link
           to="/"
@@ -71,7 +71,7 @@ export function NavBar() {
   }, []);
 
   return (
-    <Navbar className="mx-auto fixed top-0 text-rtl w-full rounded-none px-6 py-3">
+    <Navbar className="mx-auto fixed top-0 text-rtl w-full rounded-none px-6 py-3 z-50">
       <motion.div className="flex items-center justify-betwe900">
         <Typography
           as="a"
