@@ -1,10 +1,23 @@
-body {
-    background-color: black;
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #aaa;
 }
 
-h1 {
-    color: #606060;
-    background-color: #202020;
-    padding: 10px;
-    border-radius: 10px;
+body {
+    background-color: #000010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div {
+    background-color: #050515;
+    padding: 50px;
+    border-radius: 5px;
+    text-align: center;
 }
