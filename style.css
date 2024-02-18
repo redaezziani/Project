@@ -1,4 +1,9 @@
+body {
+    background-color: black;
+}
+
 h1 {
-    color: aquamarine;
-    background-color: azure;
+    color: #606060;
+    background-color: #202020;
+    padding: 10px;
 }
